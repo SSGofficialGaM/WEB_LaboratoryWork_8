@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подорожі Україною</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: url('trips-in-ukraine.webp') no-repeat center center/cover;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .icons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .icons img {
+      width: 64px;
+      height: 64px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Подорожуй Україною</h1>
+  </header>
+
+  <section class="section">
+    <h2>Карпати: Західна перлина</h2>
+    <picture>
+      <source
+        srcset="kar-images/karpaty-large.webp 1920w, kar-images/karpaty-medium.webp 1280w, kar-images/karpaty-small.webp 640w"
+        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 1920px"
+        type="image/webp">
+      <source
+        srcset="kar-images/karpaty-large.jpg 1920w, kar-images/karpaty-medium.jpg 1280w, kar-images/karpaty-small.jpg 640w"
+        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 1920px"
+        type="image/jpeg">
+      <img src="kar-images/karpaty-fallback.jpg" alt="Гори Карпати восени" loading="lazy" width="100%">
+    </picture>
+  </section>
+
+  <section class="section">
+    <h2>Типи відпочинку</h2>
+    <div class="icons">
+      <img src="https://cdn-icons-png.flaticon.com/128/71/71423.png" alt="Піший туризм" loading="lazy">
+      <img src="https://cdn-icons-png.flaticon.com/128/1054/1054194.png" alt="Кемпінг" loading="lazy">
+      <img src="https://cdn-icons-png.flaticon.com/128/5448/5448604.png" alt="Культурні маршрути" loading="lazy">
+      <img src="https://cdn-icons-png.flaticon.com/128/2030/2030442.png" alt="Морський відпочинок" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Фотогалерея</h2>
+    <div class="gallery">
+      <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-picture-icon-png-image_695350.jpg" data-src="https://media.istockphoto.com/id/1347233654/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D1%96%D0%B2%D1%89%D0%B8%D0%BD%D0%B0-%D0%BC%D0%B0%D1%82%D0%B8.jpg?s=612x612&w=0&k=20&c=xCrQNNExDyI37HSSxqd8rKoxOIqQQUi9iGNKB-91GxE=" alt="Київ" loading="lazy">
+      <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-picture-icon-png-image_695350.jpg" data-src="https://media.istockphoto.com/id/1030822544/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B2%D0%B8%D0%B4-%D0%B7-%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F-%D0%BD%D0%B0-%D1%81%D1%82%D0%B0%D1%80%D0%B5-%D0%BC%D1%96%D1%81%D1%82%D0%BE-%D0%BB%D1%8C%D0%B2%D0%BE%D0%B2%D0%B0-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0.jpg?s=612x612&w=0&k=20&c=lpYws8Fh3aL6_TslZjoEiCQvn6BjXrpm58Pbygh8Fkk=" alt="Львів" loading="lazy">
+      <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-picture-icon-png-image_695350.jpg" data-src="https://media.istockphoto.com/id/478901508/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BE%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%82%D0%B5%D0%B0%D1%82%D1%80-%D0%BE%D0%BF%D0%B5%D1%80%D1%8B-%D0%B8-%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0.jpg?s=612x612&w=0&k=20&c=4LHzP5WX1SiC4xY_fKL6pzNWWb3iZorpLE9YfofFPFs=" alt="Одеса" loading="lazy">
+      <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-picture-icon-png-image_695350.jpg" data-src="https://media.istockphoto.com/id/987624496/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B7-%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE-%D0%B2%D0%B8%D0%B4%D1%83-%D0%BD%D0%B0-%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2%D1%96%D1%89%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D1%81%D0%BE%D0%B1%D0%BE%D1%80-%D1%80%D0%B0%D0%B9%D0%BE%D0%BD-%D0%B7%D0%B0%D0%BB%D1%83%D0%BF%D0%B0%D0%BD%D1%8C-%D1%96-%D1%86%D0%B5%D0%BD%D1%82%D1%80-%D1%85%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%B0.jpg?s=612x612&w=0&k=20&c=PixiszxH7wxjdiWEkZhTpr7rGzTs7niZVfyuBWJxP6E=" alt="Харків" loading="lazy">
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll("img[data-src]");
+      images.forEach(img => {
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+      });
+    });
+  </script>
+
+</body>
+</html>
